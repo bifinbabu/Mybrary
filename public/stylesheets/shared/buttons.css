@@ -24,7 +24,7 @@
 
 .btn-primary {
     color: black;
-    background-color: #ba85ff;
+    background-color: #e4d2fc;
 }
 
 .btn-primary:hover {
@@ -39,5 +39,5 @@
 
 .btn-danger:hover {
     color: white;
-    background-color: rgb(255, 72, 0);
+    background-color: red;
 }
