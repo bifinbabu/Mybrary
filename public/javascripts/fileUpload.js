@@ -1,9 +1,10 @@
 const rootStyles = window.getComputedStyle(document.documentElement)
 
-if (rootStyles.getPropertyValue('--book-cover-width-large') != null && rootStyles.getPropertyValue('--book-cover-width-large') != '' ) {
+//to make the code wait for the stylesheet with id main-css to load
+if (rootStyles.getPropertyValue('--book-cover-width-large') != null && rootStyles.getPropertyValue('--book-cover-width-large') !== '' ) {
     ready()
 } else {
-    document.getElementById('main-css').addEventListener('load', ready)
+    document.getElementById('main-css').addEventListener('load', ready) //main-css is the id given to stylesheet in the layout.ejs file
 }
 
 function ready() {

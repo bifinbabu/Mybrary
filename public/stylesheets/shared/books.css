@@ -7,6 +7,11 @@
 .book-cover {
     width: var(--book-cover-width);
     height: calc(var(--book-cover-width) / var(--book-cover-aspect-ratio));
+    transition: 0.1s all ease-in-out;
+}
+
+.book-cover:hover {
+    transform: scale(1.08);
 }
 
 .book-cover-large {
